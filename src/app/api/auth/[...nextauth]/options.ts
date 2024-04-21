@@ -57,14 +57,14 @@ export const authOptions: NextAuthOptions = {
         session.user.isAcceptingMessages = token.isAcceptingMessages;
         session.user.username = token.username;
       }
-      return session
+      return session;
     },
   },
-  pages: {
-    signIn: '/sign-in'
-  },
   session: {
-    strategy: "jwt",
+    strategy: 'jwt',
   },
   secret: process.env.NEXTAUTH_SECRET,
-}
+  pages: {
+    signIn: '/sign-in',
+  },
+};
