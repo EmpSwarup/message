@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Loader2 } from "lucide-react"
 
-const SignInPage = () => {
+const SignUpPage = () => {
   const [username, setUsername] = useState('')
   const [usernameMessage, setUsernameMessage] = useState('')
   const [isCheckingUsername, setIsCheckingUsername] = useState(false)
@@ -164,4 +164,4 @@ const SignInPage = () => {
   )
 }
 
-export default SignInPage
+export default SignUpPage
