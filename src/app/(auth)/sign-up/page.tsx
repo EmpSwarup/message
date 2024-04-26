@@ -71,7 +71,7 @@ const page = () => {
       const axiosError = error as AxiosError<ApiResponse>;
       let errorMessage = axiosError.response?.data.message
       toast({
-        title: 'Error',
+        title: 'Signup failed',
         description: errorMessage,
         variant: "destructive"
       })
